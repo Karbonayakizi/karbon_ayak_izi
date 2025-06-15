@@ -22,7 +22,7 @@ INTERNET_CO2_PER_SAAT = 0.071  # kg CO₂ / saat
 st.title("DÜNYA'YA BIRAKTIĞIN İZİ GÖR")
 st.write("Günlük yaşam ve dijital alışkanlıklarına göre karbon ayak izini hesapla.")
 
-# -- Ulaşım --
+# ULAŞM
 st.header("Ulaşım Bilgileri")
 ulasim_turu = st.selectbox("Ulaşım türünü seçin:", ["Araç", "Toplu Taşıma", "Yayan", "Bisiklet"])
 ulasim_karbon = 0.0
@@ -35,7 +35,7 @@ elif ulasim_turu == "Toplu Taşıma":
     km = st.number_input("Günlük toplu taşıma km:", step=1.0)
     ulasim_karbon = km * 0.105 * 365
 
-# -- Beslenme --
+# BESLENM
 st.header("Beslenme")
 tur = st.selectbox("Beslenme türünüz:", ["Vegan", "Vejetaryen", "Omnivor"])
 kirmizi, tavuk, sebze = 0.0, 0.0, 0.0
@@ -49,7 +49,7 @@ else:
     tavuk = st.number_input("Günlük tavuk porsiyonu:", step=1.0)
     sebze = st.number_input("Günlük sebze porsiyonu:", step=1.0)
 
-# -- Elektrik ve Su --
+# ELEKTRİK-SU
 st.header("Ev Tüketimleri")
 elektrik_fatura = st.number_input("Aylık elektrik faturası (TL):", step=1.0)
 elektrik_kwh = elektrik_fatura / 2.5 * 12
