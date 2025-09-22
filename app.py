@@ -19,7 +19,7 @@ st.image("k.PNG", use_container_width=True)
 ELEKTRIK_CO2_PER_KWH = 0.44  # kg CO₂ / kWh
 INTERNET_CO2_PER_SAAT = 0.071  # kg CO₂ / saat
 
-st.title("DÜNYA'YA BIRAKTIĞIN İZİ GÖR")
+st.title("AY'A BIRAKTIĞIN İZİ GÖR")
 st.write("Günlük yaşam ve dijital alışkanlıklarına göre karbon ayak izini hesapla.")
 
 # ULAŞM
